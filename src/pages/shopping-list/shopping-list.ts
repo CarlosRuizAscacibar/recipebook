@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { NgForm } from "@angular/forms";
 /**
  * Generated class for the ShoppingList page.
  *
@@ -14,11 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ShoppingList {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ShoppingList');
+  onAddItem(form: NgForm){
+    console.log(form);
   }
 
 }
